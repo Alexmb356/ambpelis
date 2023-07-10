@@ -12,6 +12,7 @@ import Header from './componentes/Header';
 import firebaseApp from "./firebaseConfig/firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
+import Footer from './componentes/Footer';
 const auth = getAuth(firebaseApp);
 const firestore = getFirestore(firebaseApp);
 
@@ -75,6 +76,7 @@ function App() {
           <Route path='/editarusuario/:id' element={<Editar/>}/>
           <Route path='/Registrarse' element={<Registrarse/>}/>
       </Routes>
+      <Footer/>
       
     </div>
   );

@@ -40,15 +40,7 @@ return (
             />AMBPelis</Navbar.Brand>
         <Navbar.Toggle onClick={e => handleTogglerNav(e)} aria-controls="basic-navbar-nav" />
         
-        <Form className="d-flex" onSubmit={searchMovies}>
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-Dark" onChange={(e)=>setSearchKey(e.target.value)}>Search</Button>
-        </Form>
+        
       </Container>
     </Navbar>
 )
